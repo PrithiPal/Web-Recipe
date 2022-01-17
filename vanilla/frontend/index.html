@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <ul>
+            <li> <a href="#" class="jwt-auth"> JWT Auth</a> </li>
+            <li> <a href="#" class="auth"> oAuth 2</a></li>
+            <li> <a href="#" class="dashboard"> Dashboard </a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <!--Dashboard -->
+    <div class='contents'>
+
+        <h2>Dashboard Form </h2>
+
+        <div class="dashboard" style="display: none; ">
+
+            <form action="http://localhost:3000/item" method="POST">
+                <div>
+                    <label for="say">Name</label>
+                    <input name="itemName" id="say" value="Name">
+                </div>
+                <div>
+                    <label for="to">Description</label>
+                    <input name="itemDescription" id="to" value="Description">
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+
+
+            <div class="dashboard">
+                <h2>Items List</h2>
+                <ul></ul>
+            </div>
+
+        </div>
+
+        <div class="jwt-auth" style="display: none; ">
+
+        </div>
+
+        <div class="oauth" style="display: none; ">
+
+        </div>
+
+
+    </div>
+
+
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
