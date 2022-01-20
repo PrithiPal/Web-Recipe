@@ -1,5 +1,3 @@
-import { DashboardForm } from './dashboard.js'
-
 class View {
 
     constructor(title) {
@@ -51,7 +49,7 @@ class DashboardView extends View {
             itemButton.setAttribute("class", `item-button item${idxKey+1}`);
 
             itemButton.innerHTML = `item ${idxKey+1}`;
-            itemButton.addEventListener('click', processItemClick);
+            // itemButton.addEventListener('click', processItemClick);
 
             idxKey += 1;
             item.appendChild(itemButton);
